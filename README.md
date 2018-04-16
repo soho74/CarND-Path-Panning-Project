@@ -1,10 +1,10 @@
 # CarND-Path-Planning-Project
 Self-Driving Car Engineer Nanodegree Program
 
-![screenshot](https://user-images.githubusercontent.com/15084637/38788795-7bf915c0-4125-11e8-87e4-348daad4e0be.png)
 Movie
 https://youtu.be/-njT9c-AHhs
-   
+![screenshot](https://user-images.githubusercontent.com/15084637/38788795-7bf915c0-4125-11e8-87e4-348daad4e0be.png)
+
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2).
 
