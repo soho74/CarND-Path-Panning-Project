@@ -259,7 +259,7 @@ int main() {
             double ss = 0.0;
             int lane_flg = 0;
             int lane_num[3] = {0, 0, 0};
-            double lane_value[3] = {100.0, 100, 100};
+            double lane_value[3] = {100.0, 100.0, 100.0};
 
             //printf("%07.3lf : change lanes= %d \n", now1(), lane);
 
@@ -283,7 +283,7 @@ int main() {
                     d_num = lane;
                     too_close = true;
                   }
-                  if (ss > 0 && ss < 50){
+                  if (ss > 0.0 && ss < 50.0){
                       printf("%07.3lf : change lanes %4.1lf, \n", now1(), car_speed);
                       lane_flg = 1;
                     }
@@ -292,7 +292,7 @@ int main() {
 
                 if (lane_num[d_num] != -1){
                   if (d_num != lane){
-                    if ( ss > 40 || ss < -20 ){
+                    if ( ss > 40.0 || ss < -20.0 ){
                       if (abs(lane_value[d_num]) > abs(ss) ){
                         lane_num[d_num] = 0;
                         lane_value[d_num] = ss;
@@ -300,7 +300,7 @@ int main() {
                     }
                     else{
                       lane_num[d_num] = -1;
-                      lane_value[d_num] = 100;
+                      lane_value[d_num] = 100.0;
                     }
                   }
                   else{
@@ -313,7 +313,7 @@ int main() {
               }
             }
             else{
-              lane_next = int(car_d / 4);
+              lane_next = int(car_d / 4.0);
             }
 
             if (too_close){
